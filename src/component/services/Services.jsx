@@ -47,6 +47,9 @@ const Services = () => {
         <section id="services" className="services-section">
         <div className="container">
           <h2>Our Services</h2>
+          <p className="services-desc">
+            We deliver reliable, tech-driven logistics and supply chain solutions across India. From secure shipping to real-time tracking and warehouse management, our services are designed to meet your business needs. Experience seamless delivery and customer satisfaction with Cheetah Transport.
+          </p>
           <div className="services-grid">
             {services.map((service, idx) => (
               <div className="service-card" key={idx}>

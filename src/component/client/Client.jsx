@@ -16,6 +16,9 @@ const Client = () => {
         <section id="clients" className="clients-section">
         <div className="container">
           <h2>Our Clients</h2>
+          <p className="clients-desc">
+            We are proud to be the trusted logistics partner for some of India’s most respected companies. Our long-standing relationships are built on reliability, transparency, and a commitment to delivering exceptional service. The success of our clients is at the heart of everything we do.
+          </p>
           <div className="clients-grid">
             {clients.map((client, idx) => (
               <div className="client-card" key={idx}>

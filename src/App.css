@@ -93,7 +93,7 @@
   padding: 3rem 0 2rem 0;
   background: #f4f7fb;
 }
-.services-section h2 {
+ h2 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 2rem;
@@ -209,6 +209,137 @@
   color: #b0bec5;
 }
 
+/* Intro Section */
+.intro-section {
+  background: #fff;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+.intro-headline {
+  font-size: 2.2rem;
+  color: #1976d2;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+.intro-subheadline {
+  font-size: 1.3rem;
+  color: #1a237e;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.intro-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+.intro-highlights {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.intro-highlights li {
+  font-size: 1.1rem;
+  background: #f4f7fb;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  color: #1976d2;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.07);
+}
+.intro-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.cta-btn.secondary {
+  background: #1976d2;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.cta-btn.secondary:hover {
+  background: #fff;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+/* About Us, Mission, Team Sections */
+.aboutus-section, .mission-section, .team-section {
+  background: #f4f7fb;
+  padding: 2.5rem 0 2rem 0;
+  text-align: center;
+}
+
+.aboutus-section h3, .mission-section h3 {
+  color: #1a237e;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.aboutus-section p, .mission-section p, .team-section p {
+  color: #333;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+/* Improved Our Values Section */
+.mission-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 1rem 0;
+}
+.mission-values li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 1.08rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  position: relative;
+  min-height: 110px;
+}
+.mission-values li:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(25, 118, 210, 0.13);
+  background: #e3f2fd;
+}
+.mission-values .value-icon {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.mission-values .value-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mission-values .value-title {
+  color: #1a237e;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 0.2rem;
+  display: inline;
+}
+.mission-values .value-desc {
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 1.02rem;
+  margin: 0;
+  text-align: left;
+  word-break: break-word;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 700px) {
   .header-content, .footer-content {
@@ -223,7 +354,147 @@
   .hero-section h1 {
     font-size: 2rem;
   }
+  h2{
+
+  }
   .services-section h2, .clients-section h2 {
     font-size: 1.5rem;
+  }
+  .intro-headline {
+    font-size: 1.3rem;
+  }
+  .intro-subheadline {
+    font-size: 1rem;
+  }
+  .aboutus-section h2, .mission-section h2, .team-section h2 {
+    font-size: 1.2rem;
+  }
+  .mission-values {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .mission-values li {
+    flex-direction: row;
+    min-height: unset;
+  }
+}
+
+.services-desc {
+  text-align: center;
+  color: #333;
+  font-size: 1.08rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.clients-desc {
+  text-align: center;
+  color: #333;
+  font-size: 1.08rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* Desktop nav styles */
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 120;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #1976d2;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Mobile drawer styles */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 16px rgba(25, 118, 210, 0.08);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  transition: left 0.3s cubic-bezier(.4,0,.2,1);
+}
+.mobile-drawer.open {
+  left: 0;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.mobile-nav a {
+  color: #1976d2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mobile-nav a:hover {
+  color: #1a237e;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1976d2;
+  cursor: pointer;
+}
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 41, 59, 0.18);
+  z-index: 100;
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-title {
+    font-size: 1.1rem;
+  }
+  .company-name {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
   }
 }

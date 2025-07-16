@@ -1,9 +1,14 @@
 import './App.css';
+import AboutUs from './component/about/AboutUs';
 import Client from './component/client/Client';
 import Footer from './component/footer/Footer';
 import Header from './component/header/Header';
 import Hero from './component/hero/Hero';
+import IntroSection from './component/introSection/IntroSection';
+import OurMission from './component/mission/OurMission';
 import Services from './component/services/Services';
+import OurTeam from './component/team/OurTeam';
+
 
 const services = [
   {
@@ -54,14 +59,13 @@ function App() {
   return (
     <div className="main-bg">
       <Header />
-
       <Hero />
-
+      <IntroSection />
+      <OurMission />
       <Services />
-
       <Client />
-
-
+      <OurTeam />
+      <AboutUs />
       <Footer />
     </div>
   );
