@@ -8,7 +8,7 @@
 .main-bg {
   background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
   min-height: 100vh;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .container {
@@ -23,8 +23,8 @@
   top: 0;
   z-index: 100;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  /* padding: 0.5rem 0; */
 }
 .header-content {
   display: flex;
@@ -41,6 +41,10 @@
 .logo-icon {
   font-size: 2rem;
   margin-right: 0.5rem;
+}
+.logo-icon img {
+  width: 90px;
+  height: 70px;
 }
 .company-name {
   letter-spacing: 1px;
@@ -93,7 +97,7 @@
   padding: 3rem 0 2rem 0;
   background: #f4f7fb;
 }
- h2 {
+h2 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 2rem;
@@ -267,19 +271,24 @@
 }
 
 /* About Us, Mission, Team Sections */
-.aboutus-section, .mission-section, .team-section {
+.aboutus-section,
+.mission-section,
+.team-section {
   background: #f4f7fb;
   padding: 2.5rem 0 2rem 0;
   text-align: center;
 }
 
-.aboutus-section h3, .mission-section h3 {
+.aboutus-section h3,
+.mission-section h3 {
   color: #1a237e;
   font-size: 1.2rem;
   margin-bottom: 0.7rem;
   font-weight: 500;
 }
-.aboutus-section p, .mission-section p, .team-section p {
+.aboutus-section p,
+.mission-section p,
+.team-section p {
   color: #333;
   font-size: 1.05rem;
   margin-bottom: 1rem;
@@ -342,7 +351,8 @@
 
 /* Responsive Tweaks */
 @media (max-width: 700px) {
-  .header-content, .footer-content {
+  .header-content,
+  .footer-content {
     flex-direction: column;
     gap: 0.7rem;
     align-items: flex-start;
@@ -354,10 +364,10 @@
   .hero-section h1 {
     font-size: 2rem;
   }
-  h2{
-
+  h2 {
   }
-  .services-section h2, .clients-section h2 {
+  .services-section h2,
+  .clients-section h2 {
     font-size: 1.5rem;
   }
   .intro-headline {
@@ -366,7 +376,9 @@
   .intro-subheadline {
     font-size: 1rem;
   }
-  .aboutus-section h2, .mission-section h2, .team-section h2 {
+  .aboutus-section h2,
+  .mission-section h2,
+  .team-section h2 {
     font-size: 1.2rem;
   }
   .mission-values {
@@ -437,7 +449,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 1.2rem 1.2rem 1.2rem;
-  transition: left 0.3s cubic-bezier(.4,0,.2,1);
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-drawer.open {
   left: 0;
