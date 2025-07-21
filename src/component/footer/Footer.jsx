@@ -3,7 +3,7 @@ const Footer = () => {
         <footer className="footer-section" id="contact">
         <div className="container footer-content">
           <div>
-            <strong>Contact Us:</strong> <a href="mailto:tanmay@cheetahtransport.in">tanmay@cheetahtransport.in</a>
+            <strong>Contact Us:</strong> <a href="mailto:tanmay@cheetahtransport.in"><table></table>anmay@cheetahtransport.in</a>
           </div>
           <div>
             <strong>Address:</strong> Ghaziabad-201001

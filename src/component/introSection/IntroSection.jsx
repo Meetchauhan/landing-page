@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IntroSection = () => (
-  <section className="intro-section">
+  <section id='intro' className="intro-section">
     <div className="container">
       <h2 className="intro-headline">Fast. Reliable. Nationwide. — Welcome to Cheetah Transport.</h2>
       <h3 className="intro-subheadline">Your trusted logistics partner since 1990. Delivering excellence across India with speed, safety, and service.</h3>
